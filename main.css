@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Gingham';
+  src: url('Gingham.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url('TitilliumWeb-VF.woff2') format('woff2');
+}
+
+html {
+  padding: 80px;
+}
+
+.gingham, .gingham2 {
+    font-family: 'Gingham', sans-serif;
+}
+
+.titillium, .titillium2 {
+  font-family: 'Titillium', sans-serif;
+  margin: 0;
+}
+
+.titillium {
+  font-size: 100px;
+  font-variation-settings: "wght" 200, "wdth" 400;
+}
+
+.titillium2 {
+  font-size: 60px;
+  font-variation-settings: "wght" 100;
+}
+
+.gingham {
+  font-variation-settings: "wght" 700, "wdth" 400;
+  font-size: 100px;
+  margin: 0;
+  color: magenta;
+  text-shadow: 2px 2px cyan;
+}
+
+.gingham2 {
+  font-variation-settings: "wght" 0, "wdth" 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px yellow;
+}
+
+.anim1:hover {
+  animation: anim1 2s infinite alternate ease;
+}
+
+.anim2:hover {
+  animation: anim2 2s infinite alternate ease;
+}
+
+.anim3:hover {
+  animation: anim3 2s infinite alternate ease;
+}
+
+.anim4:hover {
+  animation: anim3 2s infinite alternate ease;
+}
+
+@keyframes anim1 {
+  from {
+    font-variation-settings: "wght" 0, "wdth" 0;
+  }
+  to {
+    font-variation-settings: "wght" 700, "wdth" 150;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    font-variation-settings: "wght" 0, "wdth" 0;
+  }
+  to {
+    font-variation-settings: "wght" 700, "wdth" 150;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    font-variation-settings: "wght" 100;
+  }
+  to {
+    font-variation-settings: "wght" 1000;
+  }
+}
+
+@keyframes anim4 {
+  from {
+    font-variation-settings: "wght" 100;
+  }
+  to {
+    font-variation-settings: "wght" 1000;
+  }
+}
